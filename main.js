@@ -61,7 +61,7 @@ function addNewListItem(){
 	newButton.appendChild(newButtonText);
 	li.appendChild(newButton);
 
-	
+	 
 	for(var i=0; i<close.length;i++){
 		close[i].onclick = function(){
 			var itemToHide = this.parentElement;
