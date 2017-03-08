@@ -13,11 +13,13 @@
 			<input id ="todoInput" type="text" placeholder="Add a to do ...">
 			<button id="add" onclick="addNewListItem()">Add</button>
 		</header>
-		<ul id="todoList">
-			<li>Walk the dog</li>
-			
+		<div id="listContainer">
+			<ul id="todoList">
+				<li><span id="starter">This is an example todo. Please delete me.</span></li>
+				<li  class="checked"><span id="checkExample">You can also check me off when completed.</span></li>
 
-		</ul>
+			</ul>
+		</div>
 		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
