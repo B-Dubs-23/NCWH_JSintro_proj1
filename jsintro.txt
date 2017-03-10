@@ -1,0 +1,147 @@
+getMiddle
+
+function getMiddle(s)
+{
+  //Code goes here!
+  var middle = Math.floor(s.length/2);
+  
+  if (s.length % 2 == 0){
+    return s.substr(middle -1, 2)
+  } else {
+    return s.substr(middle, 1)
+  }  
+}
+
+------
+
+Multiply the number
+
+function multiply(number){
+  //your code here
+  var num = Math.abs(number);
+  var digits = num.toString().length
+  var result = Math.pow(5, digits) * number
+  return result
+}
+
+------
+
+fizzbuzz
+
+function fizzbuzz(n) {
+  //code should go here
+  if (n % 3 == 0 && n % 5 ==0){
+    return "fizz buzz"
+  } else if (n % 3 == 0 ){
+    return "fizz"
+  } else if (n % 5 == 0){
+    return "buzz"
+  } else {
+    return n
+  }
+}
+
+-----
+
+n divisible by x and y
+
+function isDivisible(n, x, y) {
+ if (n % x == 0 && n % y == 0){
+    return true
+  } else {
+    return false
+  }
+}
+
+------
+
+Multiple2s!
+
+function multiples(x){
+  if (x % 49 == 0 && x % 3 == 0){
+    return "Fang"
+  } else if (x % 7 == 0){
+    return "Fizz"
+  } else if (x % 15 == 0){
+    return "Foo"
+  } else {
+    return "Far"
+   }
+}
+
+-----
+
+Improving Math.round
+
+Math.roundTo = function (number, precision) {
+  // TODO: Program Me
+   return Math.round(number * Math.pow(10, precision)) / Math.pow(10, precision);
+}
+
+School Paperwork
+
+function paperwork(n, m) {
+  if (n > 0 && m > 0){
+  return n * m
+  } else {
+  return 0
+  }
+}
+
+-----
+
+divisible by 4
+
+function divisibleByFour (num) {
+  // enter your code here
+  if(num % 4 == 0){
+    return true
+  } else {
+    return false
+  }
+}
+
+-----
+
+CubeSummation
+
+function cubeSum(n, m){
+		//TODO: sum of cubes
+  var sum = 0;
+  var arr = [];
+  arr.push(n,m);
+  var sortedArr = arr.sort(function(a, b){return a-b});
+  
+  for(var i = sortedArr[0]; i <= sortedArr[1]; i++){
+    var cubed = Math.pow(i,3)
+    sum += cubed
+  }
+
+  return sum - Math.pow(sortedArr[0],3)
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
